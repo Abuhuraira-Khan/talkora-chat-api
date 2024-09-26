@@ -35,10 +35,7 @@ app.use(helmet()); // Enable Helmet for default security headers
 
 // CORS configuration
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'https://talkora.vercel.app',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    exposedHeaders: ['Authorization'],
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }));
 
