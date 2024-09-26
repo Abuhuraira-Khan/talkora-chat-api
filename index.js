@@ -38,6 +38,7 @@ app.use(cors({
     origin: process.env.FRONTEND_URL || 'https://talkora.vercel.app',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    exposedHeaders: ['Authorization'],
     credentials: true
 }));
 
